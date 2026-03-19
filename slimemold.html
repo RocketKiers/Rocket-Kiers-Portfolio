@@ -160,9 +160,12 @@
   <section id="hero">
     <div class="container">
       <span class="tag">Project</span>
-      <h1>Audio Visualizer</h1>
+      <h1>Slime Mold Simulation</h1>
       <p class="hero-bio">
-        description
+        For my final coderclass project, I wanted to try and simulate the growth of the yellow slime mold,
+        Physarum polycephalum. To execute this, I created thousands of agents, and gave each one three senors. 
+        With these sensors, they could follow each other. This way they created paths and hubs.
+        I improved the accuracy through various rules that I am willing to tell more about if prompted.
       </p>
     </div>
   </section>
@@ -171,6 +174,13 @@
     <div class="container">
       <p class="section-label">Videos</p>
       <div class="slideshow" id="slideshow">
+
+        <div class="slide">
+          <a class="video-link" href="https://www.youtube.com/watch?v=fdFc1_RgUx0" target="_blank">
+            <img src="https://img.youtube.com/vi/fdFc1_RgUx0/maxresdefault.jpg" alt="Video 3">
+            <span class="video-link-label">Watch on YouTube ↗</span>
+          </a>
+        </div>
 
         <div class="slide active">
           <a class="video-link" href="https://www.youtube.com/watch?v=aZofXwvhowc" target="_blank">
@@ -186,13 +196,6 @@
           </a>
         </div>
 
-        <div class="slide">
-          <a class="video-link" href="https://www.youtube.com/watch?v=fdFc1_RgUx0" target="_blank">
-            <img src="https://img.youtube.com/vi/fdFc1_RgUx0/maxresdefault.jpg" alt="Video 3">
-            <span class="video-link-label">Watch on YouTube ↗</span>
-          </a>
-        </div>
-
       </div>
       <div class="slideshow-controls">
         <button class="slide-btn" id="prev">← prev</button>
@@ -203,16 +206,6 @@
     </div>
   </section>
 
-  <section class="visualizer-wrapper">
-    <div class="container">
-      <p class="section-label">Try it</p>
-      <label class="upload-label" for="audio">Upload audio file</label>
-      <input type="file" accept="audio/*" id="audio">
-      <canvas id="canvas"></canvas>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
   <script>
     const slides = document.querySelectorAll('.slide');
     const counter = document.getElementById('counter');
